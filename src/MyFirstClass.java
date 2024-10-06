@@ -1,3 +1,7 @@
+import java.util.Arrays;
+
+import static java.lang.Integer.sum;
+
 public class MyFirstClass {
     public static <string> void main(String[] args) {
 
@@ -68,7 +72,7 @@ public class MyFirstClass {
             case '/': {
                 $result = numberOne / numberTwo;
             }
-            System.out.println("The operator is devision " + " and the result is: " + $result);
+            System.out.println("The operator is division " + " and the result is: " + $result);
             break;
             case '%': {
                 $result = numberOne % numberTwo;
@@ -133,8 +137,8 @@ public class MyFirstClass {
 
        */
 
-     // Looping
-     // Exercise 1: Counting digits of any positive integer number.
+        // Looping
+        // Exercise 1: Counting digits of any positive integer number.
 
         int positiveNumber = 12489;
         int count = 0;
@@ -152,11 +156,10 @@ public class MyFirstClass {
         //...........?
 
 
-
         //Exercise 3:Asking a user to enter numbers and displaying the calculated sum
 
         boolean continueLoop; //I know that this will not work in real life case,
-                              // however I got familiar with the syntax of do while loop while writing the exercise
+        // however I got familiar with the syntax of do while loop while writing the exercise
         int numberFirst = 5;
         int numberSecond = 6;
         do {
@@ -169,14 +172,14 @@ public class MyFirstClass {
             // Ask the user if they want to continue
             System.out.print("Do you want to enter more numbers? (y/n): ");
             String answer = "no";
-            if (answer.equals("yes") ) continueLoop = true;
+            if (answer.equals("yes")) continueLoop = true;
             else {
 
-               System.out.println("Program ended.");
+                System.out.println("Program ended.");
                 break;
 
             }
-        } while(continueLoop);
+        } while (continueLoop);
 
 
         //Exercise 4:...................?
@@ -245,7 +248,7 @@ public class MyFirstClass {
 
         }
 
-      // Exercise 7: Logarithm.
+        // Exercise 7: Logarithm.
 
         int n1 = 365;
         double naturalLogOf2 = 0.0;
@@ -260,27 +263,73 @@ public class MyFirstClass {
             }
         }
 
-        // Exercise 8: Displaying dimond-like patterns.
+        // Exercise 8: Displaying dimond like patterns.
 
-        int size=3;                 // not finished
-        int asterisks=1;
-        for(int i=0; i<size; i++) {
+        int size = 3;                 // not finished
+        int asterisks = 1;
+        for (int i = 0; i < size; i++) {
             for (int
                  n2 = 1; n2 <= size - i; n2++) {
                 System.out.print(" ");
 
             }
-            for(int j=0; j<asterisks; j++) {
+            for (int j = 0; j < asterisks; j++) {
 
                 System.out.print('*');
 
             }
             System.out.println();
-            asterisks+=2;
+            asterisks += 2;
 
         }
 
+//Arrays:
+// Exercise 1. Write a program that finds the minimum and the maximum values of an integer array.
+
+        int[] arr = {28, 104, 4, 9, 4};
+        int max = arr[0];
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+
+            if (arr[i] > max) {
+                max = arr[i];
+
+            }
+            if (arr[i] < min) {
+                min = arr[i];
+
+            }
+        }
+        System.out.println("Maximum value: " + max);
+        System.out.println("Minimum value: " + min);
+
+
+        //Exercise 2: Remove an element from the array
+        int myArr[] = {56, 24, 198, 624};
+        int shortenedArr[] = new int[myArr.length - 1];
+
+        int j = 2;
+        for (int i = 0, k = 0; i < myArr.length; i++) {
+
+            if (i != j) {
+                shortenedArr[k] = myArr[i];
+                k++;
+            }
+        }
+        System.out.println("Array after deletion: " + Arrays.toString(shortenedArr));
 
     }
-
 }
+//        int calc=sum(5, 6);
+//        System.out.println("The sum is " + calc);
+//
+//        }
+// Methods Exercise 1
+
+//}
+//    public static int sum(int a, int b){
+//        return (a+b);
+//    }
+
+
+
