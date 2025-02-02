@@ -1,0 +1,2 @@
+21 36 0
+The OS sends the 4 KB block to the disk, and the CPU is free to continue running.

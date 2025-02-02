@@ -1,3 +1,5 @@
+package Package3;
+
 import java.util.Arrays;
 public class Homework2{
     public static <string> void main(String[] args) {
@@ -60,6 +62,7 @@ public class Homework2{
             // If parsing fails, concatenate as strings
             return a + b;
         }
+
     }
 }
 

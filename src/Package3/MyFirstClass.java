@@ -1,6 +1,6 @@
-import java.util.Arrays;
+package Package3;
 
-import static java.lang.Integer.sum;
+import java.util.Arrays;
 
 public class MyFirstClass {
     public static <string> void main(String[] args) {
